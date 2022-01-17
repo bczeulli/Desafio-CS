@@ -1,0 +1,22 @@
+body {
+    background-color: #667470 ;
+}
+
+.card-header{
+    background-color: #65aa37d7 ;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #92c83e ;
+}
+
+.card {
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
+  
+  .card:hover {
+    transform: scale(1.1)
+  }
+  
