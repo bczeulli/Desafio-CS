@@ -1,5 +1,5 @@
 body {
-    background-color: #667470 ;
+    background-color: #5c6462 ;
 }
 
 .card-header{
@@ -20,3 +20,8 @@ body {
     transform: scale(1.1)
   }
   
+.sucess-text {
+    color: white;
+    font-weight: 500;
+    
+}

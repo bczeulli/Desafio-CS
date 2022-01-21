@@ -52,28 +52,33 @@
           </nav>
     </header>
     <main>
-      <!-------Formulários de cima--------->
-        <div>
-          <form>
-            <div class="row g-3 mx-3 my-1">
-              <div class="col-sm-5">
-                <input type="text" class="form-control" placeholder="Nome do CLiente" aria-label="Nome do CLiente">
+      <!-------Formulários de cima-------PESQUISAR POR AUTO COMPLETE-->
+        <div class="container-fluid">
+                    
+            <form action="http://localhost:21262/add" method="post">
+              <div class="row g-3 mx-3 my-1">
+                <div class="col">
+                  <h1 class="display-6 sucess-text">Sucess Plan</h1>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" placeholder="Nome do CLiente" aria-label="Nome do CLiente">
+                </div>
+                <div class="col-sm">
+                  <input type="text" class="form-control" placeholder="Preparado por:" aria-label="Preparado por">
+                </div>
+                <div class="col-sm">
+                  <input type="text" class="form-control" placeholder="DATA" aria-label="DATA">
+                </div>
               </div>
-              <div class="col-sm">
-                <input type="text" class="form-control" placeholder="Preparado por:" aria-label="Preparado por">
-              </div>
-              <div class="col-sm">
-                <input type="text" class="form-control" placeholder="DATA" aria-label="DATA">
-              </div>
-            </div>
-          </form>
+            </form>
+          
         </div>    
         <!--primeira linha de Cards---------------------------------------------------------------------------------->
-      <div class="container">
+      <div class="container-fluid">
         <div class="row g-1 mx-4 my-1">
             <!-- comeco-->
-            <div class="col-12 col-lg-6 my-2">
-              <div class="card mx-3 my-2">
+            <div class="col-12 col-lg-4 my-2">
+              <div class="card mx-1 my-2">
                 <div class="card-header">Destaques da empresa
                   <img src="./IMG/icon-destaque.png" class="rounded float-end" alt="..."> 
                 </div>
@@ -81,7 +86,7 @@
                 <div class="card-body">
                   <div class="mb-3">
                     
-                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="6"></textarea>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                       <button class="btn btn-dark me-md-2" type="button">Editar</button>
                       <button class="btn btn-success" type="button">Salvar</button>
@@ -92,15 +97,15 @@
             </div>
             <!--Fim-------------------------------------------------------------------------------------------------------->
             <!-- comeco---------------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-6 my-2">
-              <div class="card mx-3 my-2">
+            <div class="col-12 col-lg-4 my-2">
+              <div class="card mx-1 my-2">
                 <div class="card-header">Objetivos
                   <img src="./IMG/icon-check.svg" class="rounded float-end" alt="..."> 
                 </div>
                 <div class="card-body">
                   <div class="mb-3">
                     
-                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="6"></textarea>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                       <button class="btn btn-dark me-md-2" type="button">Editar</button>
                       <button class="btn btn-success" type="button">Salvar</button>
@@ -110,13 +115,32 @@
               </div>
             </div>
             <!--Fim----------------------------------------------------------------------------------------------------->
-        </div>
+            <!-- comeco----------------------------------------------------------------------------------------------------->
+            <div class="col-12 col-lg-4 my-2">
+              <div class="card mx-1 my-2">
+                <div class="card-header">Ações e Datas
+                  <img src="./IMG/icon-calendar.png" class="rounded float-end" alt="..."> 
+                </div>
+                <div class="card-body">
+                  <div class="mb-3">
+                    
+                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <button class="btn btn-dark me-md-2" type="button">Editar</button>
+                      <button class="btn btn-success" type="button">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!--Fim-------------------------------------------------------------------------------------------> 
+          </div>      
     <!--segunda linha----------------------------------------------------------------------------------------------------->
-        <div class="container mt-lg-3">
+    <div class="container-fluid">    
         <div class="row g-1 mx-2 my-1">
             <!-- comeco----------------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-3 my-2">
-              <div class="card mx-3 my-2">
+            <div class="col-12 col-lg-3">
+              <div class="card mx-1">
                 <div class="card-header">Principais Desafios
                   <img src="./IMG/icon-desafio.png" class="rounded float-end" alt="..."> 
                 </div>
@@ -134,8 +158,8 @@
             </div>
             <!--Fim----------------------------------------------------------------------------------------------------->
             <!-- comeco----------------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-3 my-2">
-              <div class="card mx-3 my-2">
+            <div class="col-12 col-lg-3">
+              <div class="card mx-1">
                 <div class="card-header">Principais Benefícios
                   <img src="./IMG/icon-stars.png" class="rounded float-end" alt="..."> 
                 </div>
@@ -152,12 +176,13 @@
               </div>
             </div>
             <!--Fim----------------------------------------------------------------------------------------------------->
-            <!-- comeco----------------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-3 my-2">
-              <div class="card mx-3 my-2">
-                <div class="card-header">Ações e Datas
-                  <img src="./IMG/icon-calendar.png" class="rounded float-end" alt="..."> 
+             <!-- comeco------------------------------------------------------------------------------------------->
+             <div class="col-12 col-lg-3">
+              <div class="card mx-1">
+                <div class="card-header">Critério de Sucesso
+                  <img src="./IMG/icon-criterio.png" class="rounded float-end" alt="..."> 
                 </div>
+                
                 <div class="card-body">
                   <div class="mb-3">
                     
@@ -170,70 +195,27 @@
                 </div>
               </div>
             </div>
-            <!--Fim----------------------------------------------------------------------------------------------------->
-            <!-- comeco----------------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-3 my-2">
-             
-             <div class="card mx-3 my-2">
-               <div class="card-header">Critério de Sucesso
-                 <img src="./IMG/icon-criterio.png" class="rounded float-end" alt="..."> 
-               </div>
-               <div class="card-body">
-                <div class="mb-3">
-                    
-                  <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="7"></textarea>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-dark me-md-2" type="button">Editar</button>
-                    <button class="btn btn-success" type="button">Salvar</button>
-                  </div>
-                </div>
-               </div>
-             </div>
-           </div>
-           <!--Fim-------------------------------------------------------------------------------------------> 
-        </div>
-        <!--Terceira linha de Cards------------------------------------------------------------------------------------------->
-      <div class="container">
-        <div class="row g-1 my-2">
-            <!-- comeco------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-6 my-2">
-              <div class="card mx-3 my-2">
-                <div class="card-header">Critério de Sucesso
-                  <img src="./IMG/icon-criterio.png" class="rounded float-end" alt="..."> 
-                </div>
-                
-                <div class="card-body">
-                  <div class="mb-3">
-                    
-                    <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <button class="btn btn-dark me-md-2" type="button">Editar</button>
-                      <button class="btn btn-success" type="button">Salvar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <!--Fim------------------------------------------------------------------------------------------->
             <!-- comeco------------------------------------------------------------------------------------------->
-            <div class="col-12 col-lg-6 my-2">
-              <div class="card mx-3 my-2">
+            <div class="col-12 col-lg-3">
+              <div class="card mx-1">
                 <div class="card-header">Medidas de Sucesso
                   <img src="./IMG/icon-med-sucesso.png" class="rounded float-end" alt="..."> 
                 </div>
                 <div class="card-body">
                   <div class="mb-3">
-                    
-                      <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <form action="http://localhost:21262/add" method="post">
+                      <textarea class="form-control mb-3" name="medida-sucesso" id="exampleFormControlTextarea1" rows="7"></textarea>
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button class="btn btn-dark me-md-2" type="button">Editar</button>
-                        <button class="btn btn-success" type="button">Salvar</button>
+                        <button class="btn btn-success" type="submit">Salvar</button>
                       </div>
+                    </form>  
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>           
+        </div>
             <!--Fim------------------------------------------------------------------------------------------->
       </div>
     </div>
