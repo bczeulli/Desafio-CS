@@ -13,11 +13,12 @@ body {
 
 .card {
     transition-property: transform;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
   }
   
   .card:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
+    box-shadow: inset 0 0 1em black, 0 0 1em black;
   }
   
 .sucess-text {
